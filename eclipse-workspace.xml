@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Excercice">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Users/Usuario/eclipse-workspace"/>
+    <property name="dir.jarfile" value="C:/javaTmp/ProjectExercice"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/ExecExercice2.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="Excercice.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.workspace}/Excercice/bin"/>
+        </jar>
+    </target>
+</project>
